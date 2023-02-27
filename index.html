@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EgyptTour</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <span class="header__logo"><a class="header__logo-link" href="#">EgyptTour</a></span>
+          <form class="header__search-form" action="#" method="post">
+            <button class="header__search-button" type="submit">
+              <svg class="header__search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.35-4.35"/>
+              </svg>
+            </button>
+            <input class="header__search-input" type="text" placeholder="Search">
+          </form>
+          <nav class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Home</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Guides</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Inspiration</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">About</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Contact</a>
+              </li>
+              <li class="header__navigation-item">
+                <button class="button header__navigation-button" type="button">
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="hero-block">
+      <div class="container">
+        <div class="hero-block__inner">
+          <h1 class="hero-block__title background-title">
+            Find the Best Egyptian Guide
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="guide-filter">
+      <div class="container">
+        <div class="guide-filter__inner">
+          <form class="guide-filter__form" action="#" method="post">
+            <div class="guide-filter__wrapper">
+              <label class="guide-filter__label" for="gender">Gender</label>
+              <select class="guide-filter__select" name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+          </div>
+          <div class="guide-filter__wrapper">
+            <label class="guide-filter__label" for="age">Age</label>
+            <select class="guide-filter__select" name="age" id="age">
+              <option value="34+">34+</option>
+              <option value="24+">24+</option>
+              <option value="44+">44+</option>
+            </select>
+          </div>
+          <div class="guide-filter__wrapper">
+            <label class="guide-filter__label" for="language">Language</label>
+            <select class="guide-filter__select" name="language" id="language">
+              <option value="English, Arabic">English, Arabic</option>
+              <option value="Chinese">Chinese</option>
+              <option value="Russian">Russian</option>
+            </select>
+          </div>
+          <div class="guide-filter__wrapper">
+            <label class="guide-filter__label" for="localisation">Localisation</label>
+            <select class="guide-filter__select" name="localisation" id="localisation">
+              <option value="Cairo">Cairo</option>
+              <option value="Pyramids">Pyramids</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+            <button class="button guide-filter__button" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="guides">
+      <div class="container">
+        <div class="guides__inner">
+          <div class="guides__header">
+            <h2 class="guides__title section-title">Guides for you!</h2>
+            <a class="guides__see-all-link button" href="#">See All Guides</a>
+          </div>
+          <ul class="guides__cards-list">
+            <li class="guides__card">
+              <img
+                class="guides__card-photo"
+                src="images/guides/guide-1.jpg"
+                alt="Guide Abayomi"
+              />
+              <h3 class="guides__card-name">Abayomi Mallik</h3>
+              <div class="guides__card-rating">
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+              </div>
+              <p class="guides__card-reviews">1000+ reviews</p>
+            </li>
+            <li class="guides__card">
+              <img
+                class="guides__card-photo"
+                src="images/guides/guide-2.jpg"
+                alt="Berenike Eman"
+              />
+              <h3 class="guides__card-name">Berenike Eman</h3>
+              <div class="guides__card-rating">
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+              </div>
+              <p class="guides__card-reviews">1000+ reviews</p>
+            </li>
+            <li class="guides__card">
+              <img
+                class="guides__card-photo"
+                src="images/guides/guide-3.jpg"
+                alt="Guide Abu Bakar"
+              />
+              <h3 class="guides__card-name">Abu Bakar</h3>
+              <div class="guides__card-rating">
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+              </div>
+              <p class="guides__card-reviews">1000+ reviews</p>
+            </li>
+            <li class="guides__card">
+              <img
+                class="guides__card-photo"
+                src="images/guides/guide-4.jpg"
+                alt="Guide Dendera Heba"
+              />
+              <h3 class="guides__card-name">Dendera Heba</h3>
+              <div class="guides__card-rating">
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+                <svg
+                  class="guides__card-star"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.947 7.179C19.818 6.801 19.477 6.534 19.079 6.503L13.378 6.05L10.911 0.589C10.75 0.23 10.393 0 9.99998 0C9.60698 0 9.24998 0.23 9.08898 0.588L6.62198 6.05L0.920979 6.503C0.529979 6.534 0.192979 6.791 0.0599788 7.16C-0.0730212 7.529 0.0209789 7.942 0.301979 8.216L4.51498 12.323L3.02498 18.775C2.93298 19.174 3.09398 19.589 3.43098 19.822C3.60298 19.94 3.80098 20 3.99998 20C4.19298 20 4.38698 19.944 4.55498 19.832L9.99998 16.202L15.445 19.832C15.793 20.064 16.25 20.055 16.59 19.808C16.928 19.561 17.077 19.128 16.962 18.726L15.133 12.326L19.669 8.244C19.966 7.976 20.075 7.558 19.947 7.179Z"
+                  />
+                </svg>
+              </div>
+              <p class="guides__card-reviews">1000+ reviews</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="work">
+      <div class="container">
+        <div class="work__inner">
+          <h2 class="work__title section-title">How does it Work?</h2>
+          <ol class="work__steps">
+            <li class="work__card">
+              <h3 class="work__card-title">Select a Guide</h3>
+            </li>
+            <li class="work__card">
+              <h3 class="work__card-title">Contact Guide</h3>
+            </li>
+            <li class="work__card">
+              <h3 class="work__card-title">Create your Travel</h3>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="container">
+        <div class="offer__inner">
+          <div class="offer__title-container">
+            <h2 class="offer__title background-title">
+              Are you a Tourist Guide in Egypt?
+            </h2>
+          </div>
+          <div class="offer__reference">
+            <p class="offer__reference-text">
+              Be referenced on our site, <br>
+              <span class="offer__reference-text-red">it's 100% free!</span>
+            </p>
+            <div class="offer__reference-sign-block">
+            <button class=" button offer__reference-button" type="button">
+              I am a Tourist Guide
+            </button>
+            <div class="offer__reference-photos-block">
+            <ul class="offer__reference-photos">
+              <li class="offer__reference-item">
+                <img class="offer__reference-photo" src="../Project/images/guides/guide-1.jpg" alt="Турист">
+              </li>
+              <li class="offer__reference-item">
+                <img class="offer__reference-photo" src="../Project/images/guides/guide-2.jpg" alt="Турист">
+              </li>
+              <li class="offer__reference-item">
+                <img class="offer__reference-photo" src="../Project/images/guides/guide-3.jpg" alt="Турист">
+              </li>
+              <li class="offer__reference-item">
+                <img class="offer__reference-photo" src="../Project/images/guides/guide-4.jpg" alt="Турист">
+              </li>
+            </ul>
+            <p class="offer__reference-proof""><span class="offer__reference-proof-red">1000+</span> tourist join us</p>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="egypt">
+      <div class="container">
+        <div class="egypt__inner">
+          <h2 class="section-title egypt__title">Learn more About Egypt</h2>
+          <ul class="egypt__articles">
+            <li class="egypt__article">
+              <figure class="egypt__article-figure egypt__article-figure--column">
+                <img class="egypt__article-image" src="../Project/images/articles/article-1.jpg" alt="Отель.">
+                <div class="egypt__article-text">
+                  <figcaption class="egypt__article-figcaption">Hotel</figcaption>
+                  <h3 class="egypt__article-title"><a class="egypt__article-link" href="#">Where to sleep in
+                     <br> Luxor?<svg class="egypt__article-icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42"><path stroke-linecap="round" 
+                      stroke-linejoin="round" stroke-width="3" d="m12.25 29.75 17.5-17.5M12.25 12.25h17.5v17.5"/></svg>
+                  </a></h3>
+                </div>
+              </figure>
+            </li>
+            <li class="egypt__article">
+              <figure class="egypt__article-figure">
+                <img class="egypt__article-image" src="../Project/images/articles/article-2.jpg" alt="Ресторан.">
+                <div class="egypt__article-text">
+                  <figcaption class="egypt__article-figcaption">Restaurant</figcaption>
+                  <h3 class="egypt__article-title"><a class="egypt__article-link" href="#">5 restaurant 
+                    in Cairo<svg class="egypt__article-icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42"><path stroke-linecap="round" 
+                      stroke-linejoin="round" stroke-width="3" d="m12.25 29.75 17.5-17.5M12.25 12.25h17.5v17.5"/></svg>
+                  </a></h3>
+                </div>
+              </figure>
+            </li>
+            <li class="egypt__article">
+              <figure class="egypt__article-figure">
+                <img class="egypt__article-image" src="../Project/images/articles/article-3.jpg" alt="Сфинкс.">
+                <div class="egypt__article-text">
+                  <figcaption class="egypt__article-figcaption">Advance & Tip</figcaption>
+                  <h3 class="egypt__article-title"><a class="egypt__article-link" href="#">Is Egypt 
+                    dangerous?<svg class="egypt__article-icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42"><path stroke-linecap="round" 
+                      stroke-linejoin="round" stroke-width="3" d="m12.25 29.75 17.5-17.5M12.25 12.25h17.5v17.5"/></svg>
+                  </a></h3>
+                </div>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <div class="footer__about">
+              <h3 class="footer__about-title">EgyptTour</h3>
+              <p class="footer__about-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="footer__links">
+              <h3 class="footer__links-title">Useful Links</h3>
+              <ul class="footer__links-list">
+                <li class="footer__links-item"><a class="footer__links-link" href="#">About</a></li>
+                <li class="footer__links-item"><a class="footer__links-link" href="#">Guide</a></li>
+                <li class="footer__links-item"><a class="footer__links-link" href="#">Inspiration</a></li>
+                <li class="footer__links-item"><a class="footer__links-link" href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <h3 class="footer__links-title">Resources</h3>
+              <ul class="footer__links-list">
+                <li class="footer__links-item"><a class="footer__links-link" href="#">Become a guide</a></li>
+                <li class="footer__links-item"><a class="footer__links-link" href="#">Legal</a></li>
+                <li class="footer__links-item"><a class="footer__links-link" href="#">Blog</a></li>
+                <li class="footer__links-item"><a class="footer__links-link" href="#">Help</a></li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <h3 class="footer__links-title">Contact Us</h3>
+              <ul class="footer__links-list">
+                <li class="footer__links-item">
+                  <a class="footer__links-link footer__links-link--contacts" href="mailto:infomail@gmail.com">
+                    <svg class="footer__links-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path stroke-linecap="round" 
+                      stroke-linejoin="round" stroke-width="1.5" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"/>
+                      <path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m22 6-10 7L2 6"/>
+                    </svg>infomail@gmail.com
+                  </a>
+                </li>
+                <li class="footer__links-item"><a class="footer__links-link footer__links-link--contacts" href="#">
+                  <svg class="footer__links-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path
+                      stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0Z"/><path stroke-linecap="round" 
+                      stroke-linejoin="round" stroke-width="1.5" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg>
+                  48 Street Road, Cairo
+                </a>
+              </li>          
+              </ul>
+              <div class="footer__links-social">
+                <a class="footer__links-soclial-link" href="#">
+                  <svg class="footer__links-soclial-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M11.164 17.498v-6.83h2.304l.343-2.675h-2.647V6.29c0-.772.215-1.3 1.323-1.3h1.403V2.606a18.614 18.614 0 0 0-2.056-.106C9.798 2.5 8.4 3.743 8.4 6.026v1.962H6.11v2.675h2.294v6.835h2.76Z"/></svg>
+                </a>
+                <a class="footer__links-soclial-link" href="#">
+                  <svg class="footer__links-soclial-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="14" ><path d="M15.36 3.664c.012.146.012.291.012.436 0 4.437-3.378 9.55-9.55 9.55a9.484 9.484 0 0 1-5.155-1.507c.27.031.53.042.81.042 1.57 0 3.014-.53 4.168-1.434a3.363 3.363 0 0 1-3.14-2.328c.208.031.417.052.635.052.3 0 .603-.042.884-.114a3.356 3.356 0 0 1-2.691-3.294v-.042c.447.25.966.405 1.516.426a3.352 3.352 0 0 1-1.496-2.795c0-.624.165-1.195.456-1.694a9.547 9.547 0 0 0 6.922 3.513 3.815 3.815 0 0 1-.083-.77A3.355 3.355 0 0 1 12.004.35c.967 0 1.84.405 2.453 1.06a6.63 6.63 0 0 0 2.13-.81 3.35 3.35 0 0 1-1.476 1.85 6.728 6.728 0 0 0 1.932-.52 7.205 7.205 0 0 1-1.682 1.735Z"/></svg>
+                </a>
+                <a class="footer__links-soclial-link" href="#">
+                  <svg class="footer__links-soclial-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" ><path d="M9.999 6.147a3.852 3.852 0 1 0 0 7.705 3.852 3.852 0 0 0 0-7.705Zm0 6.356a2.503 2.503 0 1 1 0-5.006 2.503 2.503 0 0 1 0 5.006ZM14.005 6.904a.898.898 0 1 0 0-1.797.898.898 0 0 0 0 1.797Z"/><path d="M17.11 5.093a3.837 3.837 0 0 0-2.194-2.194 5.506 5.506 0 0 0-1.821-.35c-.803-.035-1.057-.045-3.092-.045s-2.296 0-3.092.045a5.462 5.462 0 0 0-1.82.35 3.833 3.833 0 0 0-2.194 2.194 5.487 5.487 0 0 0-.349 1.821c-.036.802-.047 1.056-.047 3.092 0 2.035 0 2.294.047 3.092.013.623.13 1.238.35 1.822a3.841 3.841 0 0 0 2.194 2.194c.58.226 1.196.355 1.821.375.803.035 1.057.045 3.092.045s2.296 0 3.091-.045a5.513 5.513 0 0 0 1.822-.35 3.844 3.844 0 0 0 2.194-2.194c.22-.583.337-1.198.35-1.821.035-.802.046-1.056.046-3.092s0-2.294-.046-3.092a5.484 5.484 0 0 0-.351-1.847Zm-1.014 7.943c-.006.48-.093.956-.26 1.407a2.49 2.49 0 0 1-1.426 1.426 4.153 4.153 0 0 1-1.392.259c-.792.036-1.015.046-3.045.046-2.032 0-2.239 0-3.046-.046a4.133 4.133 0 0 1-1.39-.26 2.487 2.487 0 0 1-1.433-1.425 4.234 4.234 0 0 1-.26-1.391c-.035-.792-.043-1.015-.043-3.045 0-2.03 0-2.238.044-3.046.006-.48.092-.955.259-1.406A2.489 2.489 0 0 1 5.536 4.13a4.174 4.174 0 0 1 1.391-.26c.793-.035 1.015-.045 3.046-.045 2.031 0 2.24 0 3.045.045.476.006.946.094 1.392.26.655.252 1.172.77 1.426 1.426.164.445.252.916.26 1.391.035.793.045 1.015.045 3.046 0 2.03 0 2.248-.036 3.045h-.01Z"/></svg>
+                </a>
+                <a class="footer__links-soclial-link" href="#">
+                  <svg class="footer__links-soclial-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" ><path d="M4.152 5.998a1.823 1.823 0 1 0 0-3.647 1.823 1.823 0 0 0 0 3.647ZM7.697 7.38v10.115h3.141v-5.002c0-1.32.249-2.599 1.885-2.599 1.614 0 1.634 1.51 1.634 2.682v4.92H17.5V11.95c0-2.725-.587-4.82-3.772-4.82-1.529 0-2.554.84-2.973 1.634h-.043V7.379H7.697Zm-5.118 0h3.146v10.115H2.579V7.38Z"/></svg>
+                </a>
+                </div>  
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <span class="footer__copyright-text">&copy; 2022 EgyptTour</span>
+            <ul class="footer__copyright-links">
+              <li class="footer__copyright-item">
+                <a class="footer__copyright-link" href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__copyright-item">
+                <a class="footer__copyright-link" href="#">Term of Condition</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+  </div>
+    </footer>
+  </body>
+</html>
